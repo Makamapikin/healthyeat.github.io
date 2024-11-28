@@ -1,0 +1,66 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 10px;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  /* Carousel Styles */
+  .carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .carousel-item {
+    display: none;
+    padding: 20px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    .carousel-item {
+      width: 100%;
+    }
+  }
+  
